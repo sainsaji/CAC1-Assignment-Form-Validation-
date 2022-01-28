@@ -13,12 +13,22 @@
 
 		<div class="form">
 			<h1>Student Feedback Form</h1>
-			<form class="login-form">
-				<input type="text" placeholder="Enter Your Name" />
-				<input type="text" placeholder="Enter Your Address" />
-				<input type="text" placeholder="Enter Your Email address" />
-				<input type="text" placeholder="Enter User Name" />
-				<input type="password" placeholder="Enter Password" />
+			<form class="login-form" action="#" onsubmit="return validation()">
+				<input
+              type="text"
+              name="name"
+			  placeholder="Enter Name"
+              class="form-control"
+              id="name"
+              autocomplete="off"
+              onkeypress="return validateAlphabets(event)"
+            />
+				
+				<span id="Name" class="text-danger font-weight-regular"> </span>
+				<input type="text" placeholder="Enter Your Address" id="address"/>
+				<input type="text" placeholder="Enter Your Email address" id="email"/>
+				<input type="text" placeholder="Enter User Name" id="user"/>
+				<input type="password" placeholder="Enter Password" id="pass" />
 				<div class="container">
 					<div class="header">
 						<p>What you like most about the college </p>
@@ -53,41 +63,47 @@
 					</div>
 					<div class="radio-block">
 						<div class="radio-content">
-						  <input id="radio1" type="radio" name="radio"  />
-						  <label for="radio1"><span></span>Friends</label>
-						  </div><br></br>
+							<input id="radio1" type="radio" name="radio" />
+							<label for="radio1"><span></span>Friends</label>
+						</div><br></br>
 						<div class="radio-content">
-						  <input id="radio2" type="radio" name="radio" />
-						  <label for="radio2"><span></span>Television</label>
+							<input id="radio2" type="radio" name="radio" />
+							<label for="radio2"><span></span>Television</label>
 						</div><br></br>
-					   <div class="radio-content">
-						  <input id="radio3" type="radio" name="radio" />
-						  <label for="radio3"><span></span>Internet</label>
+						<div class="radio-content">
+							<input id="radio3" type="radio" name="radio" />
+							<label for="radio3"><span></span>Internet</label>
 						</div><br></br>
-					   <div class="radio-content">
-						  <input id="radio4" type="radio" name="radio" />
-						  <label for="radio4"><span></span>Others</label>
+						<div class="radio-content">
+							<input id="radio4" type="radio" name="radio" />
+							<label for="radio4"><span></span>Others</label>
 						</div><br></br>
-					  </div>
-					  <div class="header">
+					</div>
+					<div class="header">
 						<p>Additional Comments?</p>
 					</div>
-					  <input type="text" placeholder="Enter Your Comments"/>
+					<input type="text" placeholder="Enter Your Comments" />
 				</div>
 
-				
-	
-		<button>Submit</button>
-		<br></br>
-		<br></br>
-		<button>Reset</button>
-		<p class="message">Not registered? <a href="#">Create an account</a></p>
-		</form>
-	</div>
+
+				<input
+            type="submit"
+            name="submit"
+            value="Submit"
+            class="btn btn-primary"
+            autocomplete="off"
+          />
+		  <input
+		  type="reset"
+		  name="reset"
+		  value="Reset"
+		  class="btn btn-secondary"
+		  autocomplete="off"
+		/>
+				<p class="message">Not registered? <a href="#">Create an account</a></p>
+			</form>
+		</div>
 	</div>
 </body>
-<script type="text/javascript">
-	
-</script>
-
+<script src="validation.js"></script>
 </html>
