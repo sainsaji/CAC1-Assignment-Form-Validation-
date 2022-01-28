@@ -2,29 +2,92 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<title>XHTML Basic Document Structure</title>
-	</head>
-	<body>
-		<div class="login-page">
-			<div class="form">
-			  <form class="register-form">
-				<input type="text" placeholder="name"/>
-				<input type="password" placeholder="password"/>
-				<input type="text" placeholder="email address"/>
-				<button>create</button>
-				<p class="message">Already registered? <a href="#">Sign In</a></p>
-			  </form>
-			  <form class="login-form">
-				<input type="text" placeholder="username"/>
-				<input type="password" placeholder="password"/>
-				<button>login</button>
-				<p class="message">Not registered? <a href="#">Create an account</a></p>
-			  </form>
-			</div>
-		  </div>
-	</body>
-	<script type="text/javascript">
-	</script>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>XHTML Basic Document Structure</title>
+</head>
+
+<body>
+	<div class="login-page">
+
+		<div class="form">
+			<h1>Student Feedback Form</h1>
+			<form class="login-form">
+				<input type="text" placeholder="Enter Your Name" />
+				<input type="text" placeholder="Enter Your Address" />
+				<input type="text" placeholder="Enter Your Email address" />
+				<input type="text" placeholder="Enter User Name" />
+				<input type="password" placeholder="Enter Password" />
+				<div class="container">
+					<div class="header">
+						<p>What you like most about the college </p>
+					</div>
+
+					<label class="check-box">
+						<input type="checkbox" />
+						<span>Student</span>
+					</label>
+					<label class="check-box">
+						<input type="checkbox" />
+						<span>Location</span>
+					</label>
+					<label class="check-box">
+						<input type="checkbox" />
+						<span>Campus</span>
+					</label>
+					<label class="check-box">
+						<input type="checkbox" />
+						<span>Atmosphere</span>
+					</label>
+					<label class="check-box">
+						<input type="checkbox" />
+						<span>Dorm Room</span>
+					</label>
+					<label class="check-box">
+						<input type="checkbox" />
+						<span>Sports</span>
+					</label>
+					<div class="header">
+						<p>How did you know about us ?</p>
+					</div>
+					<div class="radio-block">
+						<div class="radio-content">
+						  <input id="radio1" type="radio" name="radio"  />
+						  <label for="radio1"><span></span>Friends</label>
+						  </div><br></br>
+						<div class="radio-content">
+						  <input id="radio2" type="radio" name="radio" />
+						  <label for="radio2"><span></span>Television</label>
+						</div><br></br>
+					   <div class="radio-content">
+						  <input id="radio3" type="radio" name="radio" />
+						  <label for="radio3"><span></span>Internet</label>
+						</div><br></br>
+					   <div class="radio-content">
+						  <input id="radio4" type="radio" name="radio" />
+						  <label for="radio4"><span></span>Others</label>
+						</div><br></br>
+					  </div>
+					  <div class="header">
+						<p>Additional Comments?</p>
+					</div>
+					  <input type="text" placeholder="Enter Your Comments"/>
+				</div>
+
+				
+	
+		<button>Submit</button>
+		<br></br>
+		<br></br>
+		<button>Reset</button>
+		<p class="message">Not registered? <a href="#">Create an account</a></p>
+		</form>
+	</div>
+	</div>
+</body>
+<script type="text/javascript">
+	
+</script>
+
 </html>
