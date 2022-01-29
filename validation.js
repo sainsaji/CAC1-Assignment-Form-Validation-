@@ -119,17 +119,44 @@ function validateAlphabets(event) {
 		  if (pass.length <= 8 || pass.length > 20) {
 			document.getElementById("Pass").innerHTML =
 			  "Passwords lenght must be between  8 and 20";
-			  document.getElementById("user").focus();
+			  document.getElementById("pass").focus();
 			return false;
 		  }
 
 		  re = /[0-9]/;
-        if(!re.test(pass)) {
-          document.getElementById("Pass").innerHTML =
-            "Password should contain a number";
-        pass.focus();
-        return false;
-        }
+		  if(!re.test(pass)) {
+			document.getElementById("Pass").innerHTML =
+			  "Password should contain a number";
+			  document.getElementById("pass").focus();
+			return false;
+		  }
+
+		  re = /[a-z]/;
+		  if(!re.test(pass)) {
+			document.getElementById("Pass").innerHTML =
+			  "Password should contain a lowercase";
+			  document.getElementById("pass").focus();
+			return false;
+		  }
+
+
+		  re = /[A-Z]/;
+		  if(!re.test(pass)) {
+			document.getElementById("Pass").innerHTML =
+			  "Password should contain a uppercase";
+			  document.getElementById("pass").focus();
+			return false;
+		  }
+
+		  var re = /[!@#\$%\^\&*\)\(+=._-]/
+		  if(!re.test(pass)) {
+			document.getElementById("Pass").innerHTML =
+			  "Password should contain a special char";
+			  document.getElementById("pass").focus();
+			return false;
+		  }
+
+		  
 
 		
 			var radios = document.getElementsByName("radio");
