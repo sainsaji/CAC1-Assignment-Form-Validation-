@@ -14,7 +14,6 @@
 
 <body>
 	<div class="login-page">
-
 		<div class="form">
 			<h1>Student Feedback Form</h1>
 			<form class="login-form" id="form1" action="#" onsubmit="return validation()">
@@ -28,13 +27,13 @@
               onkeypress="return validateAlphabets(event)"
             />
 				<span id="Name" class="text-danger font-weight-regular"> </span>
-				<input type="text" placeholder="Enter Your Address" id="address"/>
+				<input type="text" placeholder="Enter Your Address" id="address" class="form-control"/>
 				<span id="Address" class="text-danger font-weight-regular"> </span>
-				<input type="text" placeholder="Enter Your Email address" id="email"/>
+				<input type="text" placeholder="Enter Your Email address" id="email" class="form-control"/>
 				<span id="Email" class="text-danger font-weight-regular"> </span>
-				<input type="text" placeholder="Enter User Name" id="user"/>
+				<input type="text" placeholder="Enter User Name" id="user" class="form-control"/>
 				<span id="User" class="text-danger font-weight-regular"> </span>
-				<input type="password" placeholder="Enter Password" id="pass" name="pass" />
+				<input type="password" placeholder="Enter Password" id="pass" name="pass" class="form-control"/>
 				<span id="Pass" class="text-danger font-weight-regular"> </span>
 				<div class="container">
 					<div class="header">
@@ -90,7 +89,7 @@
 					<div class="header">
 						<p>Additional Comments?</p>
 					</div>
-					<input type="text" placeholder="Enter Your Comments" />
+					<input type="text" placeholder="Enter Your Comments" class="form-control"/>
 				</div>
 				<button type="submit" form="form1" value="Submit">Submit</button>
 		  <input
