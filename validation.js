@@ -155,11 +155,18 @@ function validateAlphabets(event) {
 	   
 			for (var i = 0, len = radios.length; i < len; i++) {
 				 if (radios[i].checked) {
+					successSubmit();
 					 return true;
 				 }
 			}
 			document.getElementById("recheck").innerHTML =
 		"Select one radio";
 			return false;
+
 		
+		
+	}
+
+	function successSubmit(){
+		alert("successfully recored! Thank you for taking the survey")
 	}
