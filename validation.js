@@ -69,7 +69,7 @@ function validateAlphabets(event) {
 
 		format = /^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@christuniversity.in$/
 		email = document.getElementById("email").value;
-		if(format.test(email)){
+		if(!format.test(email)){
 			document.getElementById("Email").innerHTML =
 			  "Enter valid email address";
 			  document.getElementById("email").focus();
@@ -79,15 +79,7 @@ function validateAlphabets(event) {
 			  " ";
 		  }
 
-		  if (email.indexOf("@test") <= 0) {
-			document.getElementById("Email").innerHTML = "  Invalid Email";
-			document.getElementById("email").focus();
-			return false;
-		  }
-		  else
-		  {
-			document.getElementById("Email").innerHTML = " ";
-		  }
+		  
 
 		if(document.getElementById("user").value.length == 0)
 		{
